@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-        </div>
-    </form>
+<body class="bg-dark">
+    <div class="container p-5 bg-light">
+        <h1 class="text-center h3 pb-4">Search iTunes &amp; Play Samples</h1>
+        <form onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+            <div class="form-group">
+                <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                <button type="submit" class="btn btn-primary mt-5 px-5" id="get-music-button">Get Music</button>
+            </div>
+        </form>
+    </div>
     <div id="songs">
 
     </div>

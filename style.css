@@ -1,0 +1,25 @@
+
+li.media {
+    position: relative;
+}
+
+img.album-art:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #ccc;
+}
+
+img.album-art:hover  {
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #ccc;
+}
+
+span.play-pause {
+    position: absolute;
+    color: white;
+    top: 28%;
+    left: 3.5rem;
+}
+
+span.play-pause:hover {
+    cursor: pointer;
+}
